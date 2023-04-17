@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+
+@layer components {
+  .boor {
+    @apply border border-black
+  }
+
+  .normshar {
+    @apply border border-gray-200
+  }
+}

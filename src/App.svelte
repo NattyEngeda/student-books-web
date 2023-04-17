@@ -1,21 +1,25 @@
 <script>
-  import './app.css'
-  var count = 0;
-  function incrementCount(){
-    count+=1;
-  }
-  
-  $: if(count >=10 ){
-    console.log('THe element is hight')
-  }
+  // @ts-nocheck
 
-  $: console.log('hello natty')
-
+  import { Router, Link, Route } from "svelte-routing"
+  import Header from "./layouts/Header.svelte"
+  import Footer from "./layouts/Footer.svelte"
+  import Home from "./pages/Home.svelte"
+  import About from "./pages/About.svelte"
+  import Contact from "./pages/Contact.svelte"
+  import Profile from "./pages/Profile.svelte"
 </script>
 
+<Router>
+  <Header />
+  <main class="min-h-screen py-20">
+    <Route path="/" component={Home} />
+    <Route path="/about" component={About} />
+    <Route path="/contact" component={Contact} />
+    <Route path="/profile" component={Profile} />
+  </main>
+  <Footer />
+</Router>
 
-<h1 class="text-5xl font-bold text-blue-500">Hello {name}</h1>
-<button
-class="py-3 px-4 rounded-xl bg-blue-500 text-white text-xl"
-on:click={incrementCount}>{count}</button>
-<style></style>
+<style>
+</style>
