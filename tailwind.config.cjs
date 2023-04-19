@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     fontFamily: {
-      sans: ["Rubik Pixels", "cursive"],
+      "rubik-pixel": ["Rubik Pixels", "cursive"],
     },
     extend: {},
   },
