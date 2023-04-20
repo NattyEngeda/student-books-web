@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .boor {
+    @apply border border-black;
+  }
+
+  .normshad {
+    @apply border border-gray-200;
+  }
+}
