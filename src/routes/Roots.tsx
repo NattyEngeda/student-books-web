@@ -6,7 +6,7 @@ export default function Root() {
   return (
     <>
       <Header />
-      <main className='w-full min-h-screen gradient_background pt-28'>
+      <main className='w-full min-h-screen'>
         <Outlet />
       </main>
       <Footer />

@@ -16,7 +16,7 @@ import '../styles/underline-style.css';
 
 export default function Header() {
   return (
-    <header className="z-40 w-full h-20 md:h-24 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
+    <header className="bg-white z-40 w-full h-20 md:h-24 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
       <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0 ">
         <div>
           <h1
@@ -34,8 +34,8 @@ export default function Header() {
             shadow="md"
             width={200}
             styles={{
-            }}
-          >
+            }}>
+
             <Menu.Target>
               <div className="w-12 h-12 glassy-header rounded-full flex items-center justify-center">
                 <IconMenu2 size={25} />
