@@ -2,14 +2,7 @@ import LinkList from "./components/LinkList"
 import { Menu } from "@mantine/core";
 import { Link } from "react-router-dom";
 import {
-  IconSettings,
-  IconSearch,
-  IconPhoto,
-  IconMessageCircle,
-  IconTrash,
-  IconArrowsLeftRight,
   IconMenu2,
-  IconHome,
 } from "@tabler/icons-react";
 // Styles 
 import '../styles/underline-style.css';
